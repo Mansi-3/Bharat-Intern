@@ -1,212 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--attribute = language,language is english-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/17ba1c02ac.js" crossorigin="anonymous"></script>
+    <title>My First WebPage</title>
+    <style>
+
+        body{
+            margin : 0;
+            padding: 0;
+            font-family: Arial,sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1{
+            font-size: 36px;
+            text-decoration: underline;
+        }
+
+        nav{
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2{
+            font-size: 24px;
+            color: #333;
+        }
+
+        p{
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .image-and-text{
+            display : flex; 
+            align-items : center;
+            margin-bottom: 20px;
+        }
+
+        .image{
+            flex : 1;
+            margin-left: 20px;
+        }
+    </style>
 </head>
+<!-- THRILLED TO START MY WEB DEVELOPMENT JOURNEY-->
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars"onclick="openmenu()" ></i>
-            </nav>
+    <header>
+        <h1><u>World Cup 2023</u></h1>
+    </header>
 
-            <div class="header-text">
-                <p>IT Engineer</p>
-                <h1>Hi, I'm <span>Mansi Chitari</span><br>From India</h1>
-            </div>
-        </div>
-    </div>
-      <!----------------About--------------->
-  <div id="About">
-        <div class="container">
-          <div class="row">
-            <div class="about-col-1">
-                <img src="images/MyselfM.jpg">
-            </div>
-            <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit iste porro laudantium consequatur eum. Molestias cumque dolor aut deleniti blanditiis? Ipsam labore tempora fuga, culpa eius ab debitis ratione.</p>
+    <nav>
+        <a href="#section1">suspense</a>
+        <a href="#section2">introduction</a>
+        <a href="#section3">history</a> 
+        <a href="#section4">Winners</a>
+    </nav>
 
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('Education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="Skills">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Front-End Development</li>
-                    <li><span>DSA</span><br>Data Structures and Algorithm</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="Experience">
-                <ul>
-                    <li><span>2024</span><br>Team Leader in Investify Competition</li>
-                    <li><span>2024 Jan-Feb</span><br>Web Developer Intern at Bharat Intern</li>
-                    <li><span>2023-current</span><br>Volunteer in Bhumi NGO</li>
-                    <li><span>2023</span><br>Team Leader  in SIH competition</li>
-                    
-                </ul>
-            </div>
-            <div class="tab-contents" id="Education">
-                <ul>
-                    <li><span>2022-2026</span><br>B-Tech Information Technology at Cummins Pune</li>
-                    <li><span>2021-2022</span><br>12th at SJCS Jalgaon</li>
-                    <li><span>2019-2020</span><br>10th at SJCS Jalgaon</li>
-                </ul>
-            </div>
-              </div>
+    <div
+         class= "container" id ="section1">
+        <h2> </h2>
+        <div class = "image-and-text">
+            <div class = "text">
+            </p><b>The Most Awaited..</b></p>
+              <p><b>The Biggest Championship..</b></p>
+              <P><b>Which comes in 4 years..</b></P>
+              <P><b>YES!!!...ITS INTERNATIONAL MEN'S WORLD CUP THATS COMING<br>.......on 5th Oct</b></P>
+            
           </div>
+          <img src="IndianCricketers/WorldCup2023logo.webp" alt="ICC WorldCup2023logo" height="300" width="50" class="image" style="margin-top: 20px;">
+           </div>
+           <hr  style="border: 1px solid black;" />
+ </div>
+
+ <div class="container" id="section2">
+    <h2></h2>
+    <div class = "image-andtext">
+        <img src = "IndianCricketers/WorldCup2023teams.avif" alt = "World Cup Teams" height = "300" width = "450" class = "image" style = "float: right ; margin-left :20px ;"/>
+        <img src="IndianCricketers/WorldCup2023.webp" alt="World Cup Trophy" height="250" width="350" class="image" style="float: right; margin-left: 20px;">
+    <div class="text">
+    <p><i>Get ready for a cricketing extravaganza like 
+        <br />
+         no other! <b>The ICC Men's Cricket World Cup 2023</b> <br /> 
+        </a> is set to sweep you off your feet with <br /> breathtaking battles, heart-stopping moments,<br /> and a global spectacle of cricketing excellence. <br />In the land where cricket is not just a sport but<br /> a passion,<b> India</b> is all set to host this grand carnival<br /> of bat and ball. Teams from across the cricketing globe <br />will descend upon India, armed with their skills and strategies,<br /> as they vie for the ultimate glory – <br /><b>the Cricket World Cup trophy.</b><br /> It's a tournament that promises to be a cricket lover's dream come true,<br /> where every match is a story waiting to be told, and every player <br />is a hero in the making. Brace yourselves for a summer of cricketing magic in 2023! </i></p>
         </div>
-</div>
-<!-- -------------services------------------  -->
-<div id="Services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Developer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, autem esse! Reprehenderit laboriosam ipsa velit voluptatibus assumenda porro in perferendis aperiam, ut perspiciatis illo praesentium debitis quaerat? Sit, dolores tempora!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum harum expedita temporibus voluptatibus quae officiis error sapiente aliquid numquam placeat inventore molestias, quisquam assumenda possimus consectetur ex, pariatur ea.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-cloud"></i>
-                <h2>Google Cloud</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus fugiat unde corrupti ullam quas ut nam, deleniti, nulla recusandae quod harum ipsum non hic? Beatae accusantium doloribus itaque exercitationem dicta.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
+       
     </div>
-</div>
-<!-- ------------Portfolio--------------  -->
-<div id="Portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="Work-list">
-            <div class="work">
-                <img src="images/Screenshot 2024-02-28 183451.png">
-                <div class="layer">
-                    <h3>World Cup 23 Website</h3>
-                    <p>Frontend page of giving information about Cricket WorldCup 2023</p>
-                    <a href="WorldCup2023/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/google cloud arcade.png">
-                <div class="layer">
-                    <h3>Google Cloud Arcade</h3>
-                    <p>HandsOn Experience in Qwiklabs of Google Cloud </p>
-                    <a href="https://www.cloudskillsboost.google/public_profiles/4f658d64-235e-4fa0-bc34-42fcbcfd93eb"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/online shoppng website.png">
-                <div class="layer">
-                    <h3>Online Shopping Website</h3>
-                    <p>DSA project on Online Shopping Website</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
+    <hr  style="border: 1px solid black; "/>
 </div>
 
-<!-- ------------------contact-----------------  -->
-<div id="Contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>contact@email.com</p>
-                <p><i class="fa-solid fa-phone"></i>1234567890</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="images/Mansi Chitari.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="message"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>copyright © Mansi. Made with <i class="fa-solid fa-heart"></i></p>
-    </div>
+<div class="container" id="section3">
+    <h2>The ICC Cricket World Cup: A Brief History</h2>
+    <p><b>Origins and Inception:</b><br/>
+        The concept of a Cricket World Cup was proposed by Sir Don Bradman in the 1930s.<br />
+        The inaugural tournament was organized by the International Cricket Conference (now ICC) and took place in 1975.
+        <br/><br/>
+       
+        <b>Inaugural Tournament (1975): </b><br/>
+        Held in England, it featured eight teams.<br/>
+        Matches were 60 overs per side with white clothing and red balls.<br/>
+       The West Indies emerged as the first champions.<br/><br/>
+
+       <b>Development and Milestones: </b><br/>
+       The World Cup became a quadrennial event, with formats evolving to include more teams.<br/>
+        India's 1983 win and the introduction of colored clothing in 1992 were key milestones.<br/>
+         The 1996 tournament, hosted by the subcontinent, showcased cricket's passion.<br/><br/>
+
+         <b>Continued Success:</b>
+         The ICC Cricket World Cup remains a premier cricket event.<br/>
+         It has contributed to the sport's global growth and the emergence of cricketing legends.<br/><br/>
+         The Cricket World Cup's rich history and evolution have made it a globally celebrated sporting spectacle, shaping the future of cricket.
+       
+    </p>
+    <hr  style="border: 1px solid black;" />
 </div>
-<script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
+<div class="container" id="section4">
+    <h2>Winning teams of World Cup</h2>
+    <p>Here are the teams who have owned the wining title of worldcup</p>
+    <img src="C:\Users\91928\OneDrive\Desktop\WorldCup2023\IndianCricketers\Cricket-world-cup-winnerslist.png" alt="World Cup Trophy" height="200 ">
+    <a href="C:\Users\91928\OneDrive\Desktop\WorldCup2023\IndianCricketers\winners.html" ><br> <b>Winners</b></a>
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-</script>
-
-<script>
-var sidemenu = document.getElementById("sidemenu");
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzom8jbo9vcuwA7T5ew3kmtotoI_8PKYzDi_PCbmCh2kzS6GTgauFKpM3vQVMYQhHo7/exec'
-    const form = document.forms['submit-to-google-sheet']
+</div>
+    
+ 
   
-    const message = document.getElementById("message")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent succesfully"
-            setTimeout(function() {
-                msg.innerHTML= ""
-            },5000);
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+ 
+    
+        
+   
+      
+    
+
+   
+
+   
 </body>
 </html>
