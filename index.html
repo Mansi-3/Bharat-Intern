@@ -3,155 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Homepage</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17ba1c02ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <img src="images/logo.png" class="logo">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()" ></i>
+            </nav>
+
+            <div class="header-text">
+                <p>IT Engineer</p>
+                <h1>Hi, I'm <span>Mansi Chitari</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+      <!----------------About--------------->
+  <div id="About">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+                <img src="images/MyselfM.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Sophomore in CCOEW, Passionate about DSA in Java and Web Development, with hands on experience in leading projects .Adapt at problem-solving with a creative touch fuel by love for music.
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Front-End Development</li>
+                    <li><span>DSA</span><br>Data Structures and Algorithm</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2024</span><br>Team Leader in Investify Competition</li>
+                    <li><span>2024 Jan-Feb</span><br>Web Developer Intern at Bharat Intern</li>
+                    <li><span>2023-current</span><br>Volunteer in Bhumi NGO</li>
+                    <li><span>2023</span><br>Team Leader  in SIH competition</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2022-2026</span><br>B-Tech Information Technology at Cummins Pune</li>
+                    <li><span>2021-2022</span><br>12th at SJCS Jalgaon</li>
+                    <li><span>2019-2020</span><br>10th at SJCS Jalgaon</li>
+                </ul>
+            </div>
+              </div>
+          </div>
+        </div>
+</div>
+<!-- -------------services------------------  -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
             <div>
-                <button class="language-btn">English <img src="images/down-icon.png" alt=""></button>
-                <button>Sign In</button>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, autem esse! Reprehenderit laboriosam ipsa velit voluptatibus assumenda porro in perferendis aperiam, ut perspiciatis illo praesentium debitis quaerat? Sit, dolores tempora!</p>
+                <a href="#">Learn more</a>
             </div>
-        </nav> 
-        <div class="header-content">
-            <h1>Unlimited movies, TV shows and more</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="email-signup">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit">Get Started</button>
-            </form>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum harum expedita temporibus voluptatibus quae officiis error sapiente aliquid numquam placeat inventore molestias, quisquam assumenda possimus consectetur ex, pariatur ea.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Google Cloud</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus fugiat unde corrupti ullam quas ut nam, deleniti, nulla recusandae quod harum ipsum non hic? Beatae accusantium doloribus itaque exercitationem dicta.</p>
+                <a href="#">Learn more</a>
+            </div>
         </div>
     </div>
-
-    <div class="features">
-        <div class="row">
-            <div class="text-col">
-                <h2>Enjoy on your TV.</h2>
-                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+</div>
+<!-- ------------Portfolio--------------  -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="Work-list">
+            <div class="work">
+                <img src="images/Screenshot 2024-02-28 183451.png">
+                <div class="layer">
+                    <h3>World Cup 23 Website</h3>
+                    <p>Frontend page of giving information about Cricket WorldCup 2023</p>
+                    <a href="WorldCup2023/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-            <div class="img-col">
-                <img src="images/feature-1.png">
+            <div class="work">
+                <img src="images/google cloud arcade.png">
+                <div class="layer">
+                    <h3>Google Cloud Arcade</h3>
+                    <p>HandsOn Experience in Qwiklabs of Google Cloud </p>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/4f658d64-235e-4fa0-bc34-42fcbcfd93eb"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/online shoppng website.png">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p>DSA project on Online Shopping Website</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="img-col">
-                <img src="images/feature-2.png">
-            </div>
-            <div class="text-col">
-                <h2>Download your shows to watch offline.</h2>
-                <p>Save your favorities easily and always have something to watch.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="text-col">
-                <h2>Watch Everywhere</h2>
-                <p>Stream Unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
-            </div>
-            <div class="img-col">
-                <img src="images/feature-3.png">
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="img-col">
-                <img src="images/feature-4.png">
-            </div>
-            <div class="text-col">
-                <h2>Create profiles for children.</h2>
-                <p>Send children on adventures with their favorite characters in a space made just for them- free with your membership.</p>
-            </div>
-           
-        </div>
-
+        <a href="#" class="btn">See more</a>
     </div>
-    <div class="faq">
-         <h2>Frequently Asked Questions</h2>
-         <ul class="accordion">
-            <li>
-                <input type="radio" name="accordion" id="first">
-                <label for="first">What is Netflix?</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="second">
-                <label for="second">How much does Netflix cost?</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="third">
-                <label for="third">Where can I watch</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="fourth">
-                <label for="fourth">How do I Cancel</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="fifth">
-                <label for="fifth">Where can I watch on Netflix?</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="sixth">
-                <label for="sixth">Is Netflix good for kids?</label>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt nihil inventore sequi ducimus eius possimus cum laborum illum ut, ipsam, ipsum sint obcaecati quod, praesentium quis rerum assumenda eos.</p>
-                </div>
-            </li>
-         </ul>
-         <small>Ready to watch? Enter your email to create or restart your membership.</small>
-         <form class="email-signup">
-            <input type="email" placeholder="Email address" required>
-            <button type="submit">Get Started</button>
-        </form>
-    </div>
+</div>
 
-    <div class="footer">
-    <h2>Questions? call 000-000-000-000</h2>
-      <div class="row">
-          <div class="col">
-              <a href="#">faq</a>
-              <a href="#">Investor Relations</a>
-              <a href="#">Privacy</a>
-              <a href="#">Speed Test</a>
-          </div>
-          <div class="col">
-               <a href="#">Help Center</a>
-               <a href="#">Jobs</a>
-               <a href="#">Cookies Preferences</a>
-               <a href="#">Legal Notices</a>
-          </div>
-          <div class="col">
-            <a href="#">Account</a>
-            <a href="#">Ways to watch</a>
-            <a href="#">Corporate Information</a>
-            <a href="#">Only on Netflix</a>
-       </div>
-       <div class="col">
-        <a href="#">Media Centre</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Contact Us</a>
-   </div>
-      </div>
-      <button class="language-btn">English <img src="images/down-icon.png" alt=""></button>
-      <p class="copyright-txt">Netflix India</p>
+<!-- ------------------contact-----------------  -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@email.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Mansi Chitari.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
     </div>
+    <div class="copyright">
+        <p>copyright © Mansi. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+</script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzom8jbo9vcuwA7T5ew3kmtotoI_8PKYzDi_PCbmCh2kzS6GTgauFKpM3vQVMYQhHo7/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const message = document.getElementById("message")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function() {
+                msg.innerHTML= ""
+            },5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
